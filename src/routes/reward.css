@@ -1,0 +1,47 @@
+
+.App{
+    height: 200vh;
+}
+.con1{
+    padding: 20px;
+    background-color:  #1e3932!important;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+.ml8{
+    margin-left: 7%;
+    /* font-size: small; */
+    font-weight: bold;
+    text-align: left;
+}
+.reward-hero{
+    width: 100%;
+    /* height: auto; */
+    background-image: url('../assets/rewardimg.webp');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(212, 233, 226);
+padding: 16% 20px;
+}
+.rh-left{
+/* border: 2px solid red; */
+width:400px;
+margin: 0px 30px;
+}
+.mwl{
+    max-width: 280px;
+}
+.theflex{
+    row-gap: 20px;
+}
+.bd{
+    font-weight: 400;
+}
+.btn-green{
+    padding: 8px;
+    color: white;
+    background-color: #00754a;
+    border-radius: 20px;
+}

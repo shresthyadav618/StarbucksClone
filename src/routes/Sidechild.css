@@ -1,0 +1,36 @@
+.sidechild-list{
+    list-style: none;
+    color: rgba(0,0,0,.58)!important;
+    
+    row-gap: 13px;
+}
+.sidechild{
+    row-gap: 13px;
+    /* border: 2px solid black; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.sidechild-list > li{
+    text-align: left;
+    max-width: 100px;
+}
+.subclass{
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+    max-width: 100px;
+}
+.line> a{
+    margin-bottom: 20px;
+}
+.line >*{
+    flex: 1 1 400px;
+    margin-top: 20px;
+}
+.line>a>div>img{
+    border-radius: 50%;
+}
+.maxw{
+    max-width: 80%;
+}
