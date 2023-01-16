@@ -1,7 +1,6 @@
 import React from 'react'
 import { Homescreen } from './screens/Homescreen'
 import { Fade } from 'react-awesome-reveal'
-import { Footer } from './screens/Footer'
 import logo from "./assets/logo.png"
 import "./header.css"
 import {Routes, Route, Link} from "react-router-dom"
