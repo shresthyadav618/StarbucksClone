@@ -23,6 +23,12 @@ padding: 20px;
 .menu-hero{
     margin-left: 10%;
     /* width: 400px; */
-    height: 200px;
+    /* height: 200px; */
     /* border: 2px solid red; */
+}
+.huehue{
+    width: 90%;
+    height: 1px;
+    margin: auto;
+    background-color: gray;
 }
