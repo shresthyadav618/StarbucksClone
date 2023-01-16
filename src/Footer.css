@@ -1,0 +1,38 @@
+.boxlist{
+    color: rgba(0,0,0,.58);
+    text-decoration: none;
+    row-gap: 20px;
+    font-weight: 500;
+}
+.topbox{
+    padding: 20px;
+}
+.subbox{
+    max-width: 15%;
+    text-align: left;
+    row-gap: 20px;
+}
+.FOOTER{
+    box-shadow: 0 -1px 3px rgb(0 0 0 / 10%), 0 -2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+    padding-bottom: 3.2rem;
+    padding-top: 3.2rem;
+    margin-bottom: 40px;
+}
+.give{
+    margin-left: 7%;
+}
+
+.hrr{
+    box-sizing: inherit;
+}
+.he{
+    color: rgba(0,0,0,.58)!important;
+    text-align: left;
+}
+.last>div{
+    margin-left: 8%;
+}
+.last{
+    padding: 20px;
+    margin-top: 20px;
+}
