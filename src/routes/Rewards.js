@@ -17,20 +17,26 @@ import pay1 from "../assets/pay1.png"
 import pay2 from "../assets/pay2.webp"
 import pay3 from "../assets/pay3.webp"
 import pay4 from "../assets/pay4.webp"
+import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { Footer } from "../Footer";
 export default function Rewards() {
   const [choice, changechoice] = useState(1);
 
   useEffect(() => {
     let con = document.querySelectorAll(".onec");
     con.forEach((elm, idx) => {
-      if (idx + 1 === choice) {
+      console.log("1")
+      if (idx +1  === choice) {
         elm.style.display = "block";
       } else {
         elm.style.display = "none";
       }
     });
   }, [choice]);
+
+  
+
 
   return (
     <>
@@ -112,14 +118,14 @@ export default function Rewards() {
               Get your favourites for free
             </div>
             <div className="flex justify-center gap-10 cursor-pointer">
-              <div
+              <motion.div
                 className="inline-block  font-bold text-2xl  "
                 onClick={() => {
                   changechoice(1);
                 }}
               >
                 25<p className="gdclr inline-block">★</p>
-              </div>
+              </motion.div>
               <div
                 className="inline-block  font-bold text-2xl "
                 onClick={() => {
@@ -158,7 +164,8 @@ export default function Rewards() {
           
         </div>
         <div className="favdis">
-              <div className="flex onec">
+          <AnimatePresence>
+              <motion.div className="flex onec"  initial={{y:10 , opacity: 0}} animate={{y:0 , opacity:1}} exit={{y:-10, opacity: 0}} transition={{duration: 2}} key="1">
                 <div className="flex">
                   <img src={fav1} width="400px"></img>
                   <div>
@@ -169,9 +176,9 @@ export default function Rewards() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex onec ">
+              <motion.div className="flex onec "  initial={{y:10 , opacity: 0}} animate={{y:0 , opacity:1}} exit={{y:-10, opacity: 0}} transition={{duration: 2}} key="2" >
                 <div className="flex">
                   <img src={fav2} width="400px"></img>
                   <div className="dede">
@@ -184,9 +191,9 @@ export default function Rewards() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex onec">
+              <motion.div className="flex onec" initial={{y:10 , opacity: 0}} animate={{y:0 , opacity:1}} exit={{y:-10, opacity: 0}} transition={{duration: 2}} key="3">
                 <div className="flex">
                   <img src={fav3} width="400px"></img>
                   <div>
@@ -199,9 +206,9 @@ export default function Rewards() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex onec">
+              <motion.div className="flex onec" initial={{y:10 , opacity: 0}} animate={{y:0 , opacity:1}} exit={{y:-10, opacity: 0}} transition={{duration: 2}} key="4">
                 <div className="flex">
                   <img src={fav4} width="400px"></img>
                   <div>
@@ -214,9 +221,9 @@ export default function Rewards() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex onec">
+              <motion.div className="flex onec" initial={{y:10 , opacity: 0}} animate={{y:0 , opacity:1}} exit={{y:-10, opacity: 0}} transition={{duration: 2}} key="5">
                 <div className="flex">
                   <img src={fav5} width="400px"></img>
                   <div>
@@ -229,8 +236,8 @@ export default function Rewards() {
                     </p>
                   </div>
                 </div>
-              </div>
-              
+              </motion.div>
+              </AnimatePresence>
             </div>
 
 
@@ -334,6 +341,7 @@ export default function Rewards() {
 
         {/* <div className='favdis'></div> */}
       </div>
+      <Footer/>
     </>
   );
 }
