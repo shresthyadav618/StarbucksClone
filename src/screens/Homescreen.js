@@ -9,6 +9,7 @@ import { Fade } from "react-awesome-reveal";
 import { Reveal } from "react-awesome-reveal";
 import { keyframes } from "styled-components";
 import { Slide } from "react-awesome-reveal";
+import { Footer } from "../Footer";
 export const Homescreen = () => {
 
     const customAnimation = keyframes`
@@ -120,8 +121,9 @@ export const Homescreen = () => {
       </div>
 
       <div className="mt-10">at participating stores*</div>
+<Footer/>
       </Slide>
+
     </>
   );
 };
-
