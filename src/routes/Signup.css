@@ -1,0 +1,103 @@
+.box1{
+    color: rgba(0,0,0,.58)!important;
+    max-width: 32%;
+    margin: auto;
+}
+.mainbox{
+    width: 30%;
+    padding: 30px;
+    position: relative;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%), 0 4px 5px 0 rgb(0 0 0 / 6%), 0 2px 4px 0 rgb(0 0 0 / 7%);
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 40px;
+}
+
+.mainbox>div{
+    width: 80%;
+    text-align: left;
+    margin: 40px auto;
+}
+.pdd{
+    padding: 20px 0px;
+}
+.mainbox>div>div>input{
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 150ms cubic-bezier(0,0,1,1);
+}
+.mainbox>div>div>input:focus{
+    outline: none;
+    border: 2px solid #00754a;
+}
+.mainbox>div>div>input:focus ~label{
+transform: translateY(-50%) scale(0.8);
+background-color: white;
+padding: 0 0.2em;
+color: #00754a;
+}
+.lbll{
+    position: absolute;
+    left: 110px;
+    pointer-events: none;
+    /* margin-top: 10px; */
+    font-weight: 500;
+    font-size: large;
+    transform: translateY(0.8rem);
+    transition: 150ms cubic-bezier(0,0,1,1);
+}
+
+.newgrclr{
+   
+    color:  #006241!important;
+}
+
+.huee{
+    /* width: 90%; */
+    /* margin: auto; */
+    text-align: left;
+    
+    /* text-decoration: underline; */
+}
+.huee>input{
+    width: 45px;
+    /* width: auto; */
+    height: 25px;
+    border: 1px solid #00754a;
+}
+.huee>input:checked{
+    background: #00754a;
+    color: white;
+    
+}
+.gryclr{
+    color: rgba(0,0,0,.58)!important;
+}
+
+.btnsu{
+    background: #00754a;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 30px;
+    font-size: large;
+    font-weight: bold;
+    /* text-align: right; */
+/* margin-left: 60%; */
+}
+.redclr{
+    color: rgb(179, 47, 47);
+    font-size: large;
+    font-weight: bold;
+}
+
+.effectstay{
+    transform: translateY(-50%) scale(0.8);
+    background-color: white;
+    padding: 0 0.2em;
+    color: #00754a;
+}
