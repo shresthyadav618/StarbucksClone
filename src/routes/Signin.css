@@ -1,0 +1,129 @@
+.box{
+    width: 30%;
+    height: auto;
+    box-shadow: 0px 0px 3px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+}
+.box>div>input{
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px; 
+}
+.box>div>div>input{
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 150ms cubic-bezier(0,0,1,1);
+}
+.box>div>div>input:focus{
+    outline: none;
+    border: 2px solid #00754a;
+}
+.box>div>div>input:focus ~label{
+transform: translateY(-50%) scale(0.8);
+background-color: white;
+padding: 0 0.2em;
+color: #00754a;
+}
+.lbl{
+    position: absolute;
+    left: 60px;
+    pointer-events: none;
+    /* margin-top: 10px; */
+    font-weight: 500;
+    font-size: large;
+    transform: translateY(0.8rem);
+    transition: 150ms cubic-bezier(0,0,1,1);
+}
+.box>div>p{
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+    text-align: left;
+}
+.clrgr{
+    color: #00754a;
+}
+.hue{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    /* text-decoration: underline; */
+}
+.xx{
+    text-decoration: underline;
+}
+.hue>input{
+    width: 40px;
+}
+.hue>input:checked{
+    background: #00754a;
+    color: white;
+}
+.xx:hover{
+text-decoration: none;
+}
+.btn{
+    width: 90%;
+    margin: auto;
+    text-align: right;
+}
+
+.btn>button{
+    padding: 13px 25px;
+    background-color: #00754a;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 25px;
+    /* color: #439879; */
+    
+}
+.addeff{
+    padding: 10px 0px;
+}
+.joinrew{
+    width: 30%;
+    padding: 30px;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 3%;
+  background: rgba(212,233,226,.33);
+}
+.clrr{
+    color:  #00754a!important; 
+}
+.comp{
+    max-width: 80%;
+    margin: auto;
+}
+.newbtn{
+    color: #00754a;
+    border: 1px solid #00754a;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    width: fit-content;
+    margin: auto;
+}
+
+.effectstay{
+    transform: translateY(-50%) scale(0.8);
+    background-color: white;
+    padding: 0 0.2em;
+    color: #00754a;
+}
+.redclr{
+    color: rgb(179, 47, 47);
+    font-size: large;
+    font-weight: bold;
+}
