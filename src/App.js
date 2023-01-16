@@ -10,7 +10,7 @@ import { Fade }from "react-awesome-reveal"
 // import { R } from './Menu';
 import { Menu } from './routes/Menu';
 
-import { Footer } from './screens/Footer';
+
 import Rewards from './routes/Rewards';
 import Gift from './routes/Gift';
 import Signup from './routes/Signup';
