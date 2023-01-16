@@ -11,7 +11,7 @@ export const Backupheader = () => {
 <img src={logo} width="60px"></img>
 <Link to="/menu"><div>MENU</div></Link>
 <Link to="/rewards"><div>REWARDS</div></Link>
-<Link to="/gift"><div>GIFT CARDS</div></Link>
+<Link to="/"><div>GIFT CARDS</div></Link>
 
 
 </div>
