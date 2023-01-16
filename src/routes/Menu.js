@@ -5,6 +5,7 @@ import { Backupheader } from '../Backupheader'
 import List from "./MenuList"
 import { Sidechild  } from './Sidechild'
 import { SideChildpic } from './SideChildpic'
+import { Footer } from '../Footer'
 export const Menu = () => {
 
 console.log(List)
@@ -48,8 +49,8 @@ console.log(List)
 
 
 </div>
-
-
+<div className='huehue'></div>
+<Footer/>
     </>
     
   )
