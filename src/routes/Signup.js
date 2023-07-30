@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Signup.css";
+import {useNavigate} from "react-router-dom"
 import { Backupheader } from "../Backupheader";
 import { motion } from "framer-motion";
 import { Footer } from "../Footer";
@@ -20,7 +21,7 @@ export default function Signup() {
 
   const [Err,errMsg]=useState();
 
-  
+  const Navigate = useNavigate();
 
   function handleSubmit(){
     console.log(data)
@@ -31,7 +32,8 @@ export default function Signup() {
       const user=usercre.user;
       updateProfile(user,{
         displayName: data.firstname+ data.lastname
-      })
+      });
+      Navigate('/account/signin');
       console.log(user)
     }).catch((err)=>{
        errMsg(err.message);
